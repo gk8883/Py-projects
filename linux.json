@@ -1,0 +1,95 @@
+{
+    "FILE COMMANDS":{
+        "ls ": " directory listing\n",
+        "ls -al": " formatted listing with hidden files\n",
+        "cd dir": " change directory to dir\n",
+        "cd": " change to home\n",
+        "cd .. ": " change back to previous directory\n",
+        "pwd ": " show current directory\n",
+        "mkdir dir ": " create a directory dir\n",
+        "rm file ": " delete file\n",
+        "rm -r dir ": " delete directory dir\n",
+        "rm -f file ": " force remove file\n",
+        "rm -rf dir ": " force remove directory dir *\n",
+        "cp file1 file2 ": " copy file1 to file2\n",
+        "cp -r dir1 dir2 ": " copy dir1 to dir2; create dir2 if itdoesn't exist\n",
+        "mv file1 file2 ": " rename or move file1 to file2if file2 is an existing directory, moves file1 into  directory file2\n",
+        "ln -s file link ": " create symbolic link link to file\n",
+        "touch file ": " create or update file\n",
+        "cat > file ": " places standard input into file\n",
+        "more file ": " output the contents of file\n",
+        "head file ": " output the first 10 lines of file\n",
+        "tail file ": " output the last 10 lines of file\n",
+        "tail -f file ": " output the contents of file as it grows, starting with the last 10 lines\n"
+    },
+    "PROCESS MANAGEMENT":{
+        "ps ": " display your currently active processes\n",
+        "top ": " display all running processes\n",
+        "kill pid ": " kill process id pid\n",
+        "killall proc ": " kill all processes named proc *\n",
+        "jobs ": " lists stopped or background jobs\n",
+        "bg ": " resume a stopped job in the background\n",
+        "fg ": " brings the most recent job to foreground\n",
+        "fg n ": " brings job n to the foreground\n"
+    },
+    "FILE PERMISSIONS":{
+        "chmod octal file ": " change the permissions of file to octal, which can be found separately for user, group, and world by adding -> 4 \u2013 read (r),2 \u2013 write (w),1 \u2013 execute (x)\n",
+        "chmod 777 ": " read, write, execute for all\n",
+        "chmod 755 ": " rwx for owner, rx for group and world\n"
+    },
+    "SSH":
+    {
+    "ssh [-p port] user@host ": " connect to host as user,optionally on custom port port\n",
+    "ssh-copy-id user@host ": " add your key to host for user to enable a keyed or passwordless login\n"
+    },
+    "SEARCHING":{
+        "grep pattern files ": " search for pattern in files\n",
+        "grep -r pattern dir ": " search for pattern in dir\n",
+        "command | grep pattern ": " search for pattern in the output of command\n",
+        "locate file ": " find all instances of file\n"
+    },
+    "SYS INFO":{
+        "date ": " show the current date and time\n",
+        "cal ": " show this month's calendar\n",
+        "uptime ": " show current uptime\n",
+        "w ": " display who is online\n",
+        "whoami ": " who you are logged in as\n",
+        "finger user ": " display information about user\n",
+        "uname -a ": " show kernel information\n",
+        "cat /proc/cpuinfo ": " cpu information\n",
+        "cat /proc/meminfo ": " memory information\n",
+        "man command ": " show the manual for command\n",
+        "df ": " show disk usage\n",
+        "du ": " show directory space usage\n",
+        "free ": " show memory and swap usage\n",
+        "whereis app ": " show possible locations of app\n",
+        "which app ": " show which app will be run by default\n",
+        "type app ": " show which app or builtin will be run\n"
+    },
+    "COMPRESSION":{
+        "tar cf file.tar files ": " create a tar named file.tar containing files\n",
+        "tar xf file.tar ": " extract the files from file.tar\n",
+        "tar czf file.tar.gz files ": " create a tar with Gzip compression\n",
+        "tar xzf file.tar.gz ": " extract a tar using Gzip\n",
+        "tar cjf file.tar.bz2 ": " create a tar with Bzip2 compression\n",
+        "tar xjf file.tar.bz2 ": " extract a tar using Bzip2\n",
+        "gzip file ": " compresses file and renames it to file.gz\n",
+        "gzip -d file.gz ": " expands file.gz back to file\n"
+    },
+    "NETWORK":{
+        "ping host ": " ping host and output results\n",
+        "whois domain ": " get whois information for domain\n",
+        "dig domain ": " get DNS information for domain\n",
+        "dig -x host ": " reverse lookup host\n",
+        "wget file ": " download file\n",
+        "wget -c file ": " continue a stopped download\n",
+        "Ctrl+C ": " halts the current command\n",
+        "Ctrl+Z ": " stops the current command, resume with fg in the foreground or bg in the background\n",
+        "Ctrl+D ": " log out of current session, similar to exit\n",
+        "Ctrl+W ": " erases one word in the current line\n",
+        "Ctrl+U ": " erases the whole line\n",
+        "Ctrl+R ": " type to bring up a recent command\n",
+        "!! ": " repeats the last command\n",
+        "exit ": " log out of current session\n"
+    }
+}
