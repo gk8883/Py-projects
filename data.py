@@ -1,7 +1,7 @@
 import json
 
 def load_json(filename):
-    path=f'data/{filename}.json'
+    path=f'{filename}.json'
     with open(path,'rb') as fp:
         data=json.load(fp)
     fp.close()
